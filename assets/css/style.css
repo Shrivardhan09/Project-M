@@ -1,0 +1,228 @@
+body {
+  margin: 0;
+  /* font-family: "Montserrat", sans-serif; */
+}
+
+.container-main {
+  margin: 0px;
+}
+.p-1 {
+  position: relative;
+  /* background-color: beige; */
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 7px;
+  width: 1240px;
+  max-width: 100vw;
+  height: 20vh;
+}
+.logo-p {
+  padding-right: 5px;
+}
+.logo-name {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0px;
+  height: inherit;
+  font-family: "Montserrat", sans-serif;
+  flex: 25%;
+}
+.img-p {
+  width: 55px;
+  height: 60px;
+}
+.name-l {
+  border-left: 2px solid black;
+}
+.h-title,
+.p-desc {
+  margin: 5px;
+  padding-left: 5px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.list-items {
+  display: flex;
+  flex: 50%;
+  height: inherit;
+}
+.ul-items {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 40%;
+  font-size: 15px;
+  font-family: "Nunito Sans", Sans-serif;
+}
+
+.home-link,
+.membership-link,
+.how-link,
+.contact-link {
+  text-decoration: none;
+  color: rgba(66, 63, 63, 0.753);
+  transition: 0.2s ease;
+}
+
+.home-link:hover,
+.membership-link:hover,
+.how-link:hover,
+.contact-link:hover {
+  color: black;
+}
+
+.login-signin {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex: 25%;
+  font-size: 15px;
+  font-family: "Nunito Sans", Sans-serif;
+}
+
+.log-in {
+  color: black;
+  transition: 0.1s ease;
+}
+.log-in:hover {
+  color: rgba(194, 16, 16, 255);
+}
+
+.sign-in {
+  border: 1px solid rgba(194, 16, 16, 255);
+  color: rgba(194, 16, 16, 255);
+  border-radius: 20px;
+  padding: 10px 20px;
+  transition: 0.3s ease;
+}
+.sign-in:hover {
+  background-color: rgba(194, 16, 16, 255);
+  color: white;
+  padding: 10px 20px;
+}
+
+/* p1 page */
+
+.p1-container {
+  margin-top: 12px;
+  padding: 12px;
+  width: 1220px;
+  max-width: 100vw;
+  display: flex;
+  gap: 10px;
+}
+
+/* left-c */
+.left-c {
+  display: flex;
+  flex-direction: column;
+  flex: 50%;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 10px;
+}
+.partner-title {
+  font-size: 70px;
+  font-family: "Syne", Sans-serif;
+  color: black;
+  line-height: 1.2em;
+  font-weight: 900;
+  text-transform: capitalize;
+  margin: 12px;
+}
+.partner-desc {
+  font-family: "Nunito Sans", Sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #595d68;
+  text-align: justify;
+  margin-top: 12px;
+}
+.join-now {
+  border: 1px solid rgba(194, 16, 16, 255);
+  background-color: rgba(194, 16, 16, 255);
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: white;
+  transition: 0.2s ease;
+  margin-top: 12px;
+}
+.join-p-link {
+  text-decoration: none;
+  color: white;
+  font-family: "Nunito Sans", Sans-serif;
+}
+
+/* right-c */
+.right-c {
+  display: flex;
+  position: relative;
+  flex: 40%;
+  padding: 10px;
+}
+.partner-pic {
+  width: 415px;
+  height: 497px;
+  position: relative;
+  border-radius: 70%;
+  background-color: rgba(194, 16, 16, 255);
+  left: 80px;
+}
+.img-partner {
+  width: 400px;
+  height: 490px;
+  position: absolute;
+  border-radius: 60%;
+}
+.top-sticker {
+  position: absolute;
+  width: 90px;
+  height: 105px;
+  background-color: rgb(40, 39, 39);
+  border-radius: 70%;
+  left: 91px;
+  top: 25px;
+}
+.t-sticker {
+  width: 80px;
+  height: 100px;
+  border-radius: 50%;
+}
+.bottom-box {
+  position: absolute;
+  background: black;
+  border-radius: 30px;
+  bottom: 100px;
+  left: 50px;
+  padding: 10px;
+  width: 100px;
+  height: 23px;
+}
+.no-of-partners {
+  color: black;
+  background-color: white;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border-radius: 20px;
+  padding: 8px;
+}
+.bottom-sticker {
+  position: absolute;
+  border-radius: 62px;
+  bottom: 122px;
+  left: 135px;
+  transform: rotate(19deg);
+}
+.b-sticker {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+}

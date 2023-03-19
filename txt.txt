@@ -1,0 +1,41 @@
+classes:
+container-main
+p-1
+nav-bar
+logo-name
+logo-p
+img-p
+name-l
+name-text
+h-title
+pdesc
+
+list-items
+ul-items
+home
+membership
+how-it-works
+contact
+
+login-signin id: buttons
+log-in id:login
+sig-in id: signin
+
+left container
+partner-title - font-family: "Syne", Sans-serif
+partner-desc
+join-now
+link-p
+
+right-container
+partner-pic
+img-partner
+top-box
+top-sticker
+bottom-box
+no-of-partner
+bottom-sticker
+
+
+
+
