@@ -17,6 +17,12 @@ membership
 how-it-works
 contact
 
+
+//hamburger
+hamburger
+hamburger-icon
+menu-icon
+
 login-signin id: buttons
 log-in id:login
 sig-in id: signin
@@ -30,12 +36,55 @@ link-p
 right-container
 partner-pic
 img-partner
-top-box
 top-sticker
+t-sticker
 bottom-box
 no-of-partner
 bottom-sticker
+b-sticker
+
+p2-container
+grrom
+img-groom
+
+review
+r-desc
+
+play-button
+play-img
+
+p3-container
+meet-your-partner
+
+//bar
+find-partner-bar
+
+//search
+search-bar
+search-span
+search-input-span
+search-input
+
+drop-down
+drop-down-icon
+
+//age
+age
+age-span
 
 
+age-input-span
+age-input
 
+//gender
+gender
+gender-icon-span
+gender-icon
+
+gender-input-span
+gender-input
+
+//search
+partner-search
+search-partner-button
 

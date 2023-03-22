@@ -15,10 +15,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0px 7px;
-  width: 1240px;
+  margin: 10px 7px;
+  /* width: 1240px; */
+  /* height: 20vh; */
   max-width: 100vw;
-  height: 20vh;
 }
 .logo-p {
   padding-right: 5px;
@@ -77,6 +77,14 @@ body {
   color: black;
 }
 
+/* media queries */
+.hamburger {
+  display: none;
+}
+.menu-icon {
+  width: 25px;
+}
+
 .login-signin {
   display: flex;
   align-items: center;
@@ -89,10 +97,107 @@ body {
 .log-in {
   color: black;
   transition: 0.1s ease;
+  cursor: pointer;
 }
 .log-in:hover {
   color: rgba(194, 16, 16, 255);
 }
+/* login-page hide */
+.login-hide {
+  display: none;
+}
+.login-page {
+  width: 300px;
+  border: 1px solid transparent;
+  padding: 20px;
+  font-family: "Nunito Sans", Sans-serif;
+  box-shadow: 1px 1px 10px rgba(82, 81, 81, 0.458);
+  position: relative;
+  left: 500px;
+  top: 90px;
+}
+.click {
+  display: none;
+}
+.img-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.img-desc > img {
+  width: 40px;
+}
+.img-desc > p {
+  font-weight: 500;
+  font-size: 18px;
+}
+.mobile-desc,
+.password-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+.mobile-desc > input,
+.password-desc > input {
+  padding: 10px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.stay-login-forget-password {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.stay-login {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.forget-password > a:hover {
+  color: rgba(16, 16, 87, 0.696);
+}
+.login-button {
+  display: flex;
+  justify-content: center;
+}
+.login-click {
+  background-color: rgba(194, 16, 16, 255);
+  border: 1px solid rgba(194, 16, 16, 255);
+  color: white;
+  padding: 20px 50px;
+  border-radius: 50px;
+}
+.login-click:hover {
+  background-color: rgb(150, 50, 50);
+}
+
+.or {
+  text-align: center;
+  width: 163px;
+  margin: 0 auto;
+  padding: 3px 0;
+  color: grey;
+  font-size: 14px;
+}
+.sigup-for-free {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+.sign-up-free {
+  padding: 10px 30px;
+  background-color: rgba(194, 16, 16, 255);
+  color: white;
+  border-radius: 50px;
+  border: 1px solid rgba(194, 16, 16, 255);
+}
+.sign-up-free:hover {
+  background-color: rgb(150, 50, 50);
+}
+/* end login css */
 
 .sign-in {
   border: 1px solid rgba(194, 16, 16, 255);
@@ -100,6 +205,7 @@ body {
   border-radius: 20px;
   padding: 10px 20px;
   transition: 0.3s ease;
+  cursor: pointer;
 }
 .sign-in:hover {
   background-color: rgba(194, 16, 16, 255);
@@ -107,12 +213,152 @@ body {
   padding: 10px 20px;
 }
 
-/* p1 page */
+/* sign page hide*/
+.signup-hide {
+  display: none;
+}
+.signup-page {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  font-family: "Nunito Sans", Sans-serif;
+  padding: 10px;
+  box-shadow: 1px 1px 10px rgba(82, 81, 81, 0.458);
+  position: relative;
+  left: 450px;
+  top: 90px;
+}
+.logo-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logo-p {
+  width: 50px;
+}
+.logo-desc > p {
+  margin: 8px;
+}
+.first-last,
+.password-confirm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 0px 10px;
+  margin-top: 7px;
+}
+.first-name,
+.password {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px 0px;
+  gap: 8px;
+}
+.first-name > input,
+.password > input {
+  padding: 8px;
+  outline: none;
+}
+.last-name,
+.confirm {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0px;
+  gap: 8px;
+}
+.last-name > input,
+.confirm > input {
+  padding: 8px;
+  outline: none;
+}
 
+.gender-mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 0px 10px;
+}
+.gender-input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px 0px;
+  gap: 8px;
+}
+.gender-input > select {
+  padding: 8px;
+  background-color: white;
+  outline: none;
+  border: 1px solid rgba(66, 66, 66, 0.485);
+  border-radius: 5px;
+}
+.mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px 0px;
+  gap: 8px;
+}
+.mobile > input {
+  padding: 8px;
+  outline: none;
+}
+.mail-id {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 10px;
+  gap: 8px;
+  margin-top: 7px;
+}
+.mail-id > input {
+  padding: 8px;
+  outline: none;
+}
+.terms-conditions > p {
+  margin: 7px 0px;
+  color: grey;
+  font-size: 10px;
+  text-align: center;
+  font-weight: 600;
+}
+.signup-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 7px 0px;
+}
+.signup-button > button {
+  background-color: rgba(194, 16, 16, 255);
+  border-radius: 50px;
+  border: 1px solid rgba(194, 16, 16, 255);
+  padding: 10px 30px;
+  color: white;
+}
+.move-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0px;
+}
+.move-login > a {
+  color: rgba(46, 46, 205, 0.751);
+  text-decoration: none;
+}
+.move-login > a:hover {
+  color: rgba(40, 40, 214, 0.751);
+  text-decoration: underline;
+}
+/* end sign up page css -hide */
+
+/* p1 page */
 .p1-container {
   margin-top: 12px;
   padding: 12px;
-  width: 1220px;
+  /* width: 1220px; */
   max-width: 100vw;
   display: flex;
   gap: 10px;
@@ -148,8 +394,8 @@ body {
 .join-now {
   border: 1px solid rgba(194, 16, 16, 255);
   background-color: rgba(194, 16, 16, 255);
-  border-radius: 20px;
-  padding: 10px 20px;
+  border-radius: 50px;
+  padding: 20px 40px;
   color: white;
   transition: 0.2s ease;
   margin-top: 12px;
@@ -202,8 +448,9 @@ body {
   bottom: 100px;
   left: 50px;
   padding: 10px;
-  width: 100px;
+  width: 97px;
   height: 23px;
+  box-shadow: 1px 1px 10px rgba(32, 31, 31, 0.451);
 }
 .no-of-partners {
   color: black;
@@ -212,7 +459,7 @@ body {
   left: 0px;
   top: 0px;
   border-radius: 20px;
-  padding: 8px;
+  padding: 10px;
 }
 .bottom-sticker {
   position: absolute;
@@ -222,7 +469,186 @@ body {
   transform: rotate(19deg);
 }
 .b-sticker {
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
+  /* border-radius: 50px; */
+}
+
+/* p2  contatiner */
+.p2-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 1220px; */
+  padding: 70px 10px;
+  /* height: 100vh; */
+  position: relative;
+}
+.groom {
+  width: 250px;
+  height: 350px;
+  border-radius: 113px 113px 0px 0px;
+  position: relative;
+  box-shadow: 1px 1px 10px rgba(32, 31, 31, 0.451);
+}
+.img-groom {
+  width: 250px;
+  height: 350px;
+  border-radius: 113px 113px 0px 0px;
+  position: absolute;
+}
+.review {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  font-family: "Nunito Sans", Sans-serif;
+  font-weight: 100;
+  padding: 10px 0px 10px 30px;
   border-radius: 50px;
+  position: absolute;
+  left: 190px;
+  top: 165px;
+  width: 25%;
+  box-shadow: 1px 1px 10px rgba(32, 31, 31, 0.451);
+}
+.r-desc {
+  width: 80%;
+}
+.play-button {
+  border-radius: 50%;
+  background-color: #ffffff;
+  padding: 10px;
+  box-shadow: 1px 1px 10px rgba(32, 31, 31, 0.451);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 65px;
+  right: 40%;
+  cursor: pointer;
+}
+.play-img {
+  width: 35px;
+  height: 30px;
+}
+
+/* p3 container */
+.p3-container {
+  /* width: 1220px; */
+  /* max-width: 100vw; */
+  margin: 20px;
+  padding: 80px 0px 80px 0px;
+  /* height: 100vh;  */
+}
+.meet-your-partner {
+  color: #1a1a1a;
+  font-family: "Syne", Sans-serif;
+  font-size: 56px;
+  font-weight: 800;
+  text-transform: capitalize;
+  line-height: 1.2em;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.meet-your-partner > h1 {
+  margin: 0px;
+}
+
+.find-partner-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  padding: 50px;
+}
+/* search */
+.search-bar {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  align-items: center;
+  border: 1px solid transparent;
+  background-color: #f6f6f9;
+  border-radius: 20px 0px 0px 20px;
+  border-right: 1px solid rgba(61, 61, 61, 0.505);
+  cursor: pointer;
+}
+.search-span > img {
+  width: 25px;
+}
+.search-input {
+  border: none;
+  outline: none;
+  background-color: #f6f6f9;
+}
+
+/* hide arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.drop-down-icon {
+  width: 25px;
+}
+
+/* age */
+.age {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  align-items: center;
+  border: 1px solid transparent;
+  background-color: #f6f6f9;
+  border-right: 1px solid rgba(61, 61, 61, 0.505);
+  cursor: pointer;
+}
+.age-span > img {
+  width: 25px;
+}
+.age-input {
+  border: none;
+  outline: none;
+  background-color: #f6f6f9;
+}
+
+/* gender */
+.gender {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  border-radius: 0px 20px 20px 0px;
+  background-color: #f6f6f9;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.gender-icon-span > img {
+  width: 25px;
+}
+.gender-input {
+  border: none;
+  outline: none;
+  background-color: #f6f6f9;
+}
+
+/* search button */
+.partner-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+  margin-left: 20px;
+  border: 1px solid rgba(194, 16, 16, 255);
+  border-radius: 50px;
+  background-color: rgba(194, 16, 16, 255);
+  cursor: pointer;
+}
+.search-partner-button {
+  background-color: rgba(194, 16, 16, 255);
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-family: "Nunito Sans", Sans-serif;
 }

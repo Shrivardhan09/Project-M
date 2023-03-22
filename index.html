@@ -4,10 +4,278 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.ico"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
     <title>Matrimony</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container-main">
+      <div class="p-1">
+        <nav class="nav-bar">
+          <div class="logo-name">
+            <div class="logo-p">
+              <img src="./assets/images/logo_p.png" class="img-p" />
+            </div>
+            <div class="name-l">
+              <span class="name-text">
+                <h1 class="h-title">PARINAYAM</h1>
+                <p class="p-desc">Arya Vysya Matrimony</p>
+              </span>
+            </div>
+          </div>
+          <div class="list-items">
+            <ul class="ul-items">
+              <li class="home">
+                <a class="home-link" href="#">Home</a>
+              </li>
+              <li class="membership">
+                <a class="membership-link" href="#">Membership</a>
+              </li>
+              <li class="how-it-works">
+                <a class="how-link" href="#">How It Works</a>
+              </li>
+              <li class="contact">
+                <a class="contact-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="hamburger">
+            <span class="hamburger-icon"
+              ><img src="./assets/images/menu.png" class="menu-icon"
+            /></span>
+          </div>
+          <div class="login-signin" id="buttons">
+            <div class="log-in" id="logIn"><span>Log In</span></div>
+            <div class="sign-in" id="sigin"><span>Sign Up</span></div>
+          </div>
+          <!-- login html -->
+          <div class="login-hide" onclick="" id="login-parinayam">
+            <form class="login-page click">
+              <div class="img-desc">
+                <img src="./assets/images/logo_p.png" alt="" />
+                <p>Welcome back! Please Login</p>
+              </div>
+              <div class="mobile-desc">
+                <label for="login_mail">Mobile No./ EMail ID</label>
+                <input
+                  type="text"
+                  name=""
+                  id="mail"
+                  placeholder="Enter Mobile No./ EMail ID"
+                />
+              </div>
+              <div class="password-desc">
+                <label for="login_password">Password</label>
+                <input
+                  type="text"
+                  name=""
+                  id="login-password"
+                  placeholder="Password"
+                />
+              </div>
+              <div class="stay-login-forget-password">
+                <div class="stay-login">
+                  <input type="checkbox" name="" id="password-login" />
+                  <p>Stay logged in</p>
+                </div>
+                <div class="forget-password">
+                  <a href="#">Forget Password?</a>
+                </div>
+              </div>
+              <div class="login-button">
+                <button class="login-click">LogIn</button>
+              </div>
+              <div class="or">
+                <p>OR</p>
+              </div>
+              <div class="sigup-for-free">
+                <span class="new-to-shaadi">New to Parinayam?</span>
+                <button class="sign-up-free">SigUp Free</button>
+              </div>
+            </form>
+          </div>
+          <!-- signup-html -->
+          <div class="signup-hide" id="sigup-parinayam" onclick="">
+            <form class="signup-page">
+              <div class="logo-desc">
+                <img src="./assets/images/logo_p.png" alt="" class="logo-p" />
+                <p>Create Your Account</p>
+              </div>
+              <div class="first-last">
+                <div class="first-name">
+                  <label for="first_name">First Name</label>
+                  <input
+                    type="text"
+                    name="first-name"
+                    id=""
+                    placeholder="First Name"
+                  />
+                </div>
+                <div class="last-name">
+                  <label for="last_name">Last Name</label>
+                  <input
+                    type="text"
+                    name="last-name"
+                    id=""
+                    placeholder="Last Name"
+                  />
+                </div>
+              </div>
+              <div class="gender-mobile">
+                <div class="gender-input">
+                  <label for="Gender">Gender</label>
+
+                  <select name="gender" id="">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                  </select>
+                </div>
+                <div class="mobile">
+                  <label for="mobile">Mobile</label>
+                  <input type="number" name="" id="" placeholder="Mobile No." />
+                </div>
+              </div>
+              <div class="mail-id">
+                <label for="mail">EMail</label>
+                <input type="email" name="" id="" placeholder="Enter EMailID" />
+              </div>
+              <div class="password-confirm">
+                <div class="password">
+                  <label for="password-sigup">Password</label>
+                  <input type="password" name="" id="" placeholder="Password" />
+                </div>
+                <div class="confirm">
+                  <label for="confirm-password">Confirm Password</label>
+                  <input
+                    type="password"
+                    name=""
+                    id=""
+                    placeholder="Confirm Password"
+                  />
+                </div>
+              </div>
+              <div class="terms-conditions">
+                <p>
+                  By Clicking REGISTER You Agree To Our Terms AND Conditions
+                </p>
+              </div>
+              <div class="signup-button">
+                <button>SignUp</button>
+              </div>
+              <div class="move-login">
+                <a href="/login.html">Login</a>
+              </div>
+            </form>
+          </div>
+        </nav>
+        <section class="p1-container">
+          <div class="left-c">
+            <div><h1 class="partner-title">Find Your Perfect Partner</h1></div>
+            <div class="partner-desc">
+              A wedding is a civil or religious ceremony which celebrates the
+              beginning of a marriage. Wedding traditions and customs vary
+              greatly between cultures, ethnic groups, religions, countries, and
+              social classes. Wedding is an opportunity to perform a traditional
+              ceremony and celebrate with friends and families.
+            </div>
+            <div class="join-now">
+              <a class="join-p-link" id="join-link" href="#">Join Now</a>
+            </div>
+          </div>
+          <div class="right-c">
+            <div class="partner-pic">
+              <img class="img-partner" src="/assets/images/2.jpg" />
+            </div>
+            <div class="top-sticker">
+              <img class="t-sticker" src="/assets/images/sticker1.jpg" />
+            </div>
+            <div class="bottom-box">
+              <div class="no-of-partners">500+ Members</div>
+            </div>
+            <div class="bottom-sticker">
+              <img class="b-sticker" src="/assets/images/hear.gif" />
+            </div>
+          </div>
+        </section>
+        <section class="p2-container">
+          <div class="groom">
+            <img class="img-groom" src="./assets/images/groom.avif" />
+          </div>
+          <div class="review">
+            <h3 class="r-desc">We have more than 300+ Five Star Reviews</h3>
+          </div>
+          <div class="play-button">
+            <img class="play-img" src="/assets/images/play_arrow.png" />
+          </div>
+        </section>
+        <section class="p3-container">
+          <div class="meet-your-partner">
+            <h1>Meet Your Partner</h1>
+          </div>
+          <div class="find-partner-bar">
+            <div class="search-bar">
+              <span class="search-span"
+                ><img src="/assets/images/person_search.png" /></span
+              ><span class="search-input-span"
+                ><input
+                  class="search-input"
+                  type="number"
+                  name="number"
+                  placeholder="SearchID"
+                />
+              </span>
+              <span class="drop-down">
+                <img class="drop-down-icon" src="./assets/images/dropdwn.png" />
+              </span>
+            </div>
+            <div class="age">
+              <span class="age-span"
+                ><img src="/assets/images/person.png" />
+              </span>
+              <span class="age-input-span">
+                <input
+                  class="age-input"
+                  type="text"
+                  name="Age"
+                  placeholder="Age"
+                />
+              </span>
+              <span class="drop-down">
+                <img class="drop-down-icon" src="./assets/images/dropdwn.png" />
+              </span>
+            </div>
+            <div class="gender">
+              <span class="gender-icon-span">
+                <img src="/assets/images/gender-symbol.png" />
+              </span>
+              <span class="gender-input-span">
+                <input
+                  class="gender-input"
+                  type="text"
+                  name="Gender"
+                  placeholder="Gender"
+                />
+              </span>
+              <span class="drop-down">
+                <img class="drop-down-icon" src="./assets/images/dropdwn.png" />
+              </span>
+            </div>
+            <div class="partner-search">
+              <button class="search-partner-button">Search</button>
+            </div>
+          </div>
+          <div class="sample-partner" id="profiles">
+            <!-- <div class="partner-profile" id="partner-profiles"></div> -->
+            <!-- json -->
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
 </html>
-<script src="./assets/js/main.js"></script>
+<script src="./assets/js/script.js"></script>

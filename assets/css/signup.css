@@ -1,0 +1,137 @@
+.signup-page {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  font-family: "Nunito Sans", Sans-serif;
+  padding: 10px;
+  box-shadow: 1px 1px 10px rgba(82, 81, 81, 0.458);
+  position: relative;
+  left: 450px;
+  top: 90px;
+  /* background-color: rgb(0, 0, 0, 0.5); */
+  /* color: white; */
+}
+.logo-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logo-p {
+  width: 50px;
+}
+.logo-desc > p {
+  margin: 8px;
+}
+.first-last,
+.password-confirm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 0px 10px;
+  margin-top: 7px;
+}
+.first-name,
+.password {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px 0px;
+  gap: 8px;
+}
+.first-name > input,
+.password > input {
+  padding: 8px;
+  outline: none;
+}
+.last-name,
+.confirm {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0px;
+  gap: 8px;
+}
+.last-name > input,
+.confirm > input {
+  padding: 8px;
+  outline: none;
+}
+
+.gender-mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 0px 10px;
+}
+.gender-input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px 0px;
+  gap: 8px;
+}
+.gender-input > select {
+  padding: 8px;
+  background-color: white;
+  outline: none;
+  border: 1px solid rgba(66, 66, 66, 0.485);
+  border-radius: 5px;
+}
+.mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px 0px;
+  gap: 8px;
+}
+.mobile > input {
+  padding: 8px;
+  outline: none;
+}
+.mail-id {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 10px;
+  gap: 8px;
+  margin-top: 7px;
+}
+.mail-id > input {
+  padding: 8px;
+  outline: none;
+}
+.terms-conditions > p {
+  margin: 7px 0px;
+  color: grey;
+  font-size: 10px;
+  text-align: center;
+  font-weight: 600;
+}
+.signup-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 7px 0px;
+}
+.signup-button > button {
+  background-color: rgba(194, 16, 16, 255);
+  border-radius: 50px;
+  border: 1px solid rgba(194, 16, 16, 255);
+  padding: 10px 30px;
+  color: white;
+}
+.move-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0px;
+}
+.move-login > a {
+  color: rgba(46, 46, 205, 0.751);
+  text-decoration: none;
+}
+.move-login > a:hover {
+  color: rgba(40, 40, 214, 0.751);
+  text-decoration: underline;
+}
