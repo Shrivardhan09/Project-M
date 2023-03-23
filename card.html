@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .steps-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 70%;
+        position: relative;
+        left: 180px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .block1,
+      .block2,
+      .block3 {
+        display: flex;
+      }
+      .block2 {
+        position: relative;
+      }
+      .step1-signup {
+        position: absolute;
+        top: -200px;
+      }
+      .block3 {
+        position: relative;
+      }
+      .step3-matching {
+        position: absolute;
+        top: 0px;
+      }
+      .empty-div {
+        flex: 25%;
+      }
+      .steps-desc {
+        flex: 25%;
+        font-size: 70px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .step1-div,
+      .step2-div,
+      .step3-div {
+        width: 300px;
+        height: 221px;
+        margin: 12px;
+        flex: 25%;
+      }
+      .step1-signup,
+      .step2-choose,
+      .step3-matching {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        margin: 12px;
+        border: 1px solid transparent;
+        border-radius: 50px;
+        padding: 50px 30px 50px 30px;
+        transition: 0.3s ease;
+      }
+      .step1-signup {
+        background-image: linear-gradient(180deg, #ffffff 0%, #f7f4ff 100%);
+      }
+      .step2-choose {
+        background-image: linear-gradient(180deg, #ffffff 0%, #ffedf3 100%);
+      }
+      .step3-matching {
+        background-image: linear-gradient(180deg, #ffffff 0%, #f2f7ff 100%);
+      }
+      .step1-signup:hover {
+        border: 1px solid #bca1f538;
+      }
+      .step2-choose:hover {
+        border: 1px solid #f8a3c1;
+      }
+      .step3-matching:hover {
+        border: 1px solid #a2c3f5;
+      }
+      .step1-title > h2,
+      .step2-title > h2,
+      .step3-title > h2 {
+        border-radius: 50px;
+        width: 100px;
+        height: 100px;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .step2-title > h2 {
+        font-size: 18px;
+        text-align: center;
+      }
+      .sign-up-desc > p,
+      .step2-desc > p,
+      .step3-desc > p {
+        margin: 0px 25px;
+      }
+      .step3-title > h2 {
+        font-size: 18px;
+        text-align: center;
+      }
+      .desc-help {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 25%;
+      }
+      .whatsapp-learnmore {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: 20px;
+      }
+      .w-l-div {
+        flex: 25%;
+      }
+      .whats-app {
+        padding: 10px 20px;
+        border-radius: 50px;
+        background-color: rgba(194, 16, 16, 255);
+        color: white;
+        border: 1px solid rgba(194, 16, 16, 255);
+        font-size: 15px;
+      }
+      .learnmore {
+        border: none;
+        color: black;
+        background-color: white;
+        font-size: 15px;
+      }
+      .learnmore:hover {
+        color: rgba(194, 16, 16, 255);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="steps-container">
+      <section class="block1">
+        <div class="empty-div"></div>
+        <div class="steps-desc">How To Choose A Partner</div>
+      </section>
+      <section class="block2">
+        <div class="step1-div">
+          <div class="step1-signup">
+            <div class="step1-title">
+              <h2>Sign Up</h2>
+            </div>
+            <div class="sign-up-desc">
+              <p>Register for free & put up your Matrimony Profile</p>
+            </div>
+          </div>
+        </div>
+        <div class="step2-div">
+          <div class="step2-choose">
+            <div class="step2-title">
+              <h2>Choose Partner</h2>
+            </div>
+            <div class="step2-desc">
+              <p>Select & Connect with Matches you like</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="block3">
+        <div class="step3-div">
+          <div class="step3-matching">
+            <div class="step3-title">
+              <h2>Matching Kundli</h2>
+            </div>
+            <div class="step3-desc">
+              <p>Match your Kundali with your to-be partner. Check how successful your marriage would be.</p>
+            </div>
+          </div>
+        </div>
+        <div class="desc-help">
+          <div class="w-l-div">
+            <div class="help-services">
+              <p>
+                Still confused? Don’t worry; we have got your back. Check out our in-depth documentation – or simply get
+                in touch with our support team for more help.
+              </p>
+            </div>
+            <div class="whatsapp-learnmore">
+              <button class="whats-app">Contact</button>
+              <button class="learnmore">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

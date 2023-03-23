@@ -1,36 +1,37 @@
 const profiles = [
   {
     id: 1,
-    image: '/assets/images/v.png',
+    image: 'https://github.com/Shrivardhan09/Project-M/blob/main/assets/images/v.png?raw=true',
     name: 'Shrivardhan',
     location: 'Hyderabad, Telangana',
   },
   {
     id: 2,
-    image: '/assets/images/v.png',
+    image: 'https://github.com/Shrivardhan09/Project-M/blob/main/assets/images/v.png?raw=true',
     name: 'Shrivardhan',
     location: 'Hyderabad, Telangana',
   },
   {
     id: 3,
-    image: '/assets/images/v.png',
+    image: 'https://github.com/Shrivardhan09/Project-M/blob/main/assets/images/v.png?raw=true',
     name: 'Shrivardhan',
     location: 'Hyderabad, Telangana',
   },
   {
-    id: 3,
-    image: '/assets/images/v.png',
+    id: 4,
+    image: 'https://github.com/Shrivardhan09/Project-M/blob/main/assets/images/v.png?raw=true',
     name: 'Shrivardhan',
     location: 'Hyderabad, Telangana',
   },
 ];
+
 const jsonProfiles = JSON.stringify(profiles);
 console.log(jsonProfiles);
 
 const samplePartners = document.getElementById('profiles');
 
 for (let i = 0; i < profiles.length; i++) {
-  const len = profiles.length;
+  const len = profiles[i];
 
   const partnerProfiles = document.createElement('div');
   partnerProfiles.className = 'partner-profile';
@@ -56,15 +57,13 @@ for (let i = 0; i < profiles.length; i++) {
   const profileLocation = document.createElement('div');
   profileLocation.className = 'profile-location';
 
-  const locationP = document.createElement('h4');
+  const locationP = document.createElement('p');
   locationP.className = 'location-p';
   locationP.textContent = len.location;
-
   profileLocation.appendChild(locationP);
-
   partnerProfiles.appendChild(profilePic);
   partnerProfiles.appendChild(profileName);
-  partnerProfiles.appendChild(profileLocation);
+  profileName.appendChild(profileLocation);
 
   samplePartners.append(partnerProfiles);
 }

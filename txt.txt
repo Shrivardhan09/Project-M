@@ -88,3 +88,28 @@ gender-input
 partner-search
 search-partner-button
 
+  {
+    id: 1,
+    image: 'https://github.com/Shrivardhan09/Project-M/blob/main/assets/images/v.png?raw=true',
+    name: 'Shrivardhan',
+    location: 'Hyderabad, Telangana',
+  },
+  {
+    id: 2,
+    image: 'https://github.com/Shrivardhan09/Project-M/blob/main/assets/images/v.png?raw=true',
+    name: 'Shrivardhan',
+    location: 'Hyderabad, Telangana',
+  },
+  {
+    id: 3,
+    image: 'https://github.com/Shrivardhan09/Project-M/blob/main/assets/images/v.png?raw=true',
+    name: 'Shrivardhan',
+    location: 'Hyderabad, Telangana',
+  },
+  {
+    id: 3,
+    image: 'https://github.com/Shrivardhan09/Project-M/blob/main/assets/images/v.png?raw=true',
+    name: 'Shrivardhan',
+    location: 'Hyderabad, Telangana',
+  },
+];

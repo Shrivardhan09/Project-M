@@ -7,7 +7,7 @@ body {
   margin: 0px;
 }
 .p-1 {
-  position: relative;
+  /* position: relative; */
   /* background-color: beige; */
 }
 
@@ -29,7 +29,7 @@ body {
   align-items: center;
   padding: 0px;
   height: inherit;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   flex: 25%;
 }
 .img-p {
@@ -43,7 +43,7 @@ body {
 .p-desc {
   margin: 5px;
   padding-left: 5px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .list-items {
@@ -58,7 +58,7 @@ body {
   align-items: center;
   flex: 40%;
   font-size: 15px;
-  font-family: "Nunito Sans", Sans-serif;
+  font-family: 'Nunito Sans', Sans-serif;
 }
 
 .home-link,
@@ -91,7 +91,7 @@ body {
   justify-content: space-evenly;
   flex: 25%;
   font-size: 15px;
-  font-family: "Nunito Sans", Sans-serif;
+  font-family: 'Nunito Sans', Sans-serif;
 }
 
 .log-in {
@@ -103,14 +103,11 @@ body {
   color: rgba(194, 16, 16, 255);
 }
 /* login-page hide */
-.login-hide {
-  display: none;
-}
 .login-page {
   width: 300px;
   border: 1px solid transparent;
   padding: 20px;
-  font-family: "Nunito Sans", Sans-serif;
+  font-family: 'Nunito Sans', Sans-serif;
   box-shadow: 1px 1px 10px rgba(82, 81, 81, 0.458);
   position: relative;
   left: 500px;
@@ -198,7 +195,8 @@ body {
   background-color: rgb(150, 50, 50);
 }
 /* end login css */
-
+/*  */
+/* signin button */
 .sign-in {
   border: 1px solid rgba(194, 16, 16, 255);
   color: rgba(194, 16, 16, 255);
@@ -207,26 +205,29 @@ body {
   transition: 0.3s ease;
   cursor: pointer;
 }
+
 .sign-in:hover {
   background-color: rgba(194, 16, 16, 255);
   color: white;
   padding: 10px 20px;
 }
+/*  */
 
 /* sign page hide*/
-.signup-hide {
-  display: none;
-}
+
 .signup-page {
   display: flex;
   flex-direction: column;
   width: 400px;
-  font-family: "Nunito Sans", Sans-serif;
+  font-family: 'Nunito Sans', Sans-serif;
   padding: 10px;
   box-shadow: 1px 1px 10px rgba(82, 81, 81, 0.458);
   position: relative;
   left: 450px;
   top: 90px;
+}
+.sclick {
+  display: none;
 }
 .logo-desc {
   display: flex;
@@ -353,6 +354,7 @@ body {
   text-decoration: underline;
 }
 /* end sign up page css -hide */
+/*  */
 
 /* p1 page */
 .p1-container {
@@ -375,7 +377,7 @@ body {
 }
 .partner-title {
   font-size: 70px;
-  font-family: "Syne", Sans-serif;
+  font-family: 'Syne', Sans-serif;
   color: black;
   line-height: 1.2em;
   font-weight: 900;
@@ -383,7 +385,7 @@ body {
   margin: 12px;
 }
 .partner-desc {
-  font-family: "Nunito Sans", Sans-serif;
+  font-family: 'Nunito Sans', Sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 1.8em;
@@ -403,7 +405,7 @@ body {
 .join-p-link {
   text-decoration: none;
   color: white;
-  font-family: "Nunito Sans", Sans-serif;
+  font-family: 'Nunito Sans', Sans-serif;
 }
 
 /* right-c */
@@ -500,7 +502,7 @@ body {
 .review {
   background-color: rgb(255, 255, 255);
   color: black;
-  font-family: "Nunito Sans", Sans-serif;
+  font-family: 'Nunito Sans', Sans-serif;
   font-weight: 100;
   padding: 10px 0px 10px 30px;
   border-radius: 50px;
@@ -541,7 +543,7 @@ body {
 }
 .meet-your-partner {
   color: #1a1a1a;
-  font-family: "Syne", Sans-serif;
+  font-family: 'Syne', Sans-serif;
   font-size: 56px;
   font-weight: 800;
   text-transform: capitalize;
@@ -631,6 +633,7 @@ input::-webkit-inner-spin-button {
   border: none;
   outline: none;
   background-color: #f6f6f9;
+  padding: 0px 10px;
 }
 
 /* search button */
@@ -650,5 +653,244 @@ input::-webkit-inner-spin-button {
   color: white;
   border: none;
   font-size: 16px;
-  font-family: "Nunito Sans", Sans-serif;
+  font-family: 'Nunito Sans', Sans-serif;
+}
+
+/* json cards */
+.sample-partner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 50px 0px;
+  font-family: 'Nunito Sans', Sans-serif;
+}
+
+.partner-profile {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border: 1px solid transparent;
+  gap: 20px;
+  padding: 10px;
+  box-shadow: 1px 1px 10px #31313154;
+  background-color: #f6f6f9;
+  border-radius: 5px;
+}
+.partner-profile:hover {
+  box-shadow: 1px 1px 20px #5857576c;
+  background: white;
+}
+.profile-pic {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+}
+.profile-name {
+  padding: 0px 10px;
+}
+.profile-name,
+.profile-location {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+.name-p,
+.location-p {
+  margin: 7px 0px auto;
+}
+
+/* steps */
+.step-to-follow {
+  padding: 10px 5px;
+  position: relative;
+}
+.steps-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  width: 70%;
+  position: relative;
+  left: 180px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.block1,
+.block2,
+.block3 {
+  display: flex;
+}
+.block2 {
+  position: relative;
+}
+.step1-signup {
+  position: absolute;
+  top: -200px;
+}
+.block3 {
+  position: relative;
+}
+.step3-matching {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+}
+.empty-div {
+  flex: 25%;
+}
+.steps-desc {
+  flex: 25%;
+  font-size: 70px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.step1-div,
+.step2-div,
+.step3-div {
+  width: 300px;
+  height: 300px;
+  margin: 12px;
+  flex: 25%;
+}
+.step1-signup,
+.step2-choose,
+.step3-matching {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  margin: 12px;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  padding: 50px 30px 50px 30px;
+  transition: 0.3s ease;
+}
+.step1-signup {
+  background-image: linear-gradient(180deg, #ffffff 0%, #f7f4ff 100%);
+}
+.step2-choose {
+  background-image: linear-gradient(180deg, #ffffff 0%, #ffedf3 100%);
+}
+.step3-matching {
+  background-image: linear-gradient(180deg, #ffffff 0%, #f2f7ff 100%);
+}
+.step1-signup:hover {
+  border: 1px solid #bca1f538;
+}
+.step2-choose:hover {
+  border: 1px solid #f8a3c1;
+}
+.step3-matching:hover {
+  border: 1px solid #a2c3f5;
+}
+.step1-title > h2,
+.step2-title > h2,
+.step3-title > h2 {
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.step2-title > h2 {
+  font-size: 18px;
+  text-align: center;
+}
+.sign-up-desc > p,
+.step2-desc > p,
+.step3-desc > p {
+  margin: 0px 25px;
+}
+.step3-title > h2 {
+  font-size: 18px;
+  text-align: center;
+}
+.desc-help {
+  margin: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 25%;
+  position: relative;
+}
+.whatsapp-learnmore {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+.w-l-div {
+  flex: 25%;
+}
+.whats-app {
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: rgba(194, 16, 16, 255);
+  color: white;
+  border: 1px solid rgba(194, 16, 16, 255);
+  font-size: 15px;
+}
+.learnmore {
+  border: none;
+  color: black;
+  background-color: white;
+  font-size: 15px;
+}
+.learnmore:hover {
+  color: rgba(194, 16, 16, 255);
+}
+/*  */
+
+/* footer */
+.footer-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 50px 30px 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 1px 0px 10px rgba(44, 43, 43, 0.458);
+  margin-top: 12px;
+  
+}
+.matrimony-call-mail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.matrimony-name > h1 {
+  margin: 7px 0px;
+}
+.call-mail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.p-call > a,
+.mail-p > a {
+  color: black;
+  text-decoration: none;
+}
+.p-call > p,
+.mail-p > p {
+  margin: 7px 0px;
+  color: grey;
+  font-size: 18px;
+}
+.p-call > a:hover,
+.mail-p > a:hover {
+  color: rgba(194, 16, 16, 255);
+  text-decoration: underline;
+}
+.social-media-icons a {
+  text-decoration: none;
 }

@@ -6,6 +6,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/login.css" />
     <title>LogIn</title>
+    <style>
+      .login-page {
+        width: 300px;
+        border: 1px solid transparent;
+        padding: 20px;
+        font-family: 'Nunito Sans', Sans-serif;
+        box-shadow: 1px 1px 10px rgba(82, 81, 81, 0.458);
+        position: relative;
+        left: 500px;
+        top: 90px;
+      }
+      /* .click {
+        display: none;
+      } */
+      .img-desc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .img-desc > img {
+        width: 40px;
+      }
+      .img-desc > p {
+        font-weight: 500;
+        font-size: 18px;
+      }
+      .mobile-desc,
+      .password-desc {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+      .mobile-desc > input,
+      .password-desc > input {
+        padding: 10px;
+        outline: none;
+        border-radius: 5px;
+        border: 1px solid black;
+      }
+      .stay-login-forget-password {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .stay-login {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+      .forget-password > a:hover {
+        color: rgba(16, 16, 87, 0.696);
+      }
+      .login-button {
+        display: flex;
+        justify-content: center;
+      }
+      .login-click {
+        background-color: rgba(194, 16, 16, 255);
+        border: 1px solid rgba(194, 16, 16, 255);
+        color: white;
+        padding: 20px 50px;
+        border-radius: 50px;
+      }
+      .login-click:hover {
+        background-color: rgb(150, 50, 50);
+      }
+
+      .or {
+        text-align: center;
+        width: 163px;
+        margin: 0 auto;
+        padding: 3px 0;
+        color: grey;
+        font-size: 14px;
+      }
+      .sigup-for-free {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+      }
+      .sign-up-free {
+        padding: 10px 30px;
+        background-color: rgba(194, 16, 16, 255);
+        color: white;
+        border-radius: 50px;
+        border: 1px solid rgba(194, 16, 16, 255);
+      }
+      .sign-up-free:hover {
+        background-color: rgb(150, 50, 50);
+      }
+    </style>
   </head>
   <body>
     <form class="login-page click">
@@ -16,12 +109,7 @@
 
       <div class="mobile-desc">
         <label for="login_mail">Mobile No./ EMail ID</label>
-        <input
-          type="text"
-          name=""
-          id="mail"
-          placeholder="Enter Mobile No./ EMail ID"
-        />
+        <input type="text" name="" id="mail" placeholder="Enter Mobile No./ EMail ID" />
       </div>
 
       <div class="password-desc">
