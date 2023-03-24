@@ -12,6 +12,11 @@ signupClick.addEventListener('click', () => {
   hideS.classList.toggle('sclick');
 });
 
+const joinNowClick = document.querySelector('#join-link');
+joinNowClick.addEventListener('click', () => {
+  hideS.classList.toggle('sclick');
+});
+
 const profiles = [
   {
     id: 1,

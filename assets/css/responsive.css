@@ -1,0 +1,192 @@
+/* Phone */
+@media screen and (max-width: 480px) and (min-width: 380px) {
+  .p-1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+  }
+  .logo-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .list-items {
+    display: flex;
+    gap: 10px;
+  }
+  .ul-items {
+    display: flex;
+    gap: 10px;
+    font-size: 17px;
+  }
+  .login-signin {
+    display: flex;
+    gap: 10px;
+  }
+  /* login */
+  .login-page {
+    width: 250px;
+    left: 50px;
+    top: 170px;
+  }
+  .stay-login-forget-password {
+    display: flex;
+    flex-direction: column;
+  }
+  .login-button {
+    margin-top: 10px;
+  }
+  .login-click {
+    padding: 10px 30px;
+  }
+  .sigup-for-free {
+    display: flex;
+    flex-direction: column;
+  }
+  /* signup page */
+  .signup-page {
+    width: 300px;
+    left: 50px;
+    top: 170px;
+  }
+  .first-last {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .gender-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+  .password-confirm {
+    display: flex;
+    flex-direction: column;
+  }
+  .first-name,
+  .password {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .gender-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+  }
+  .gender-input {
+    padding: 0px;
+  }
+  .password-confirm {
+    display: flex;
+    align-items: start;
+  }
+  /*  */
+  .p1-container {
+    display: block;
+    flex-direction: column;
+  }
+  .partner-pic {
+    position: relative;
+    left: 10px;
+  }
+  .top-sticker {
+    position: absolute;
+    left: 0px;
+  }
+  .bottom-box {
+    position: absolute;
+    left: 0px;
+  }
+  .bottom-sticker {
+    position: absolute;
+    left: 100px;
+  }
+  .p2-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .play-button {
+    position: absolute;
+    right: 150px;
+  }
+  .review {
+    position: relative;
+    width: 95%;
+    top: 0px;
+    left: 10px;
+    border-radius: 30px;
+    padding: 10px 0px;
+  }
+  .r-desc {
+    margin: 10px 0px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .meet-your-partner {
+    display: flex;
+    flex-direction: column;
+  }
+  .find-partner-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .search-bar,
+  .age,
+  .gender {
+    border-radius: 10px;
+    border: 1px solid transparent;
+  }
+  .sample-partner {
+    display: flex;
+    flex-direction: column;
+  }
+  .steps-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 0px;
+  }
+  .block1,
+  .block2,
+  .block3 {
+    display: flex;
+    flex-direction: column;
+  }
+  .step1-signup {
+    position: relative;
+    top: 0px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+  }
+  .step3-matching {
+    position: relative;
+    top: 0px;
+  }
+  .footer-details {
+    display: flex;
+    flex-direction: column;
+  }
+  .call-mail {
+    display: flex;
+    flex-direction: column;
+  }
+  .p-call,
+  .mail-p {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .social-media-icons {
+    text-align: center;
+  }
+}
