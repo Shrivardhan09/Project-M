@@ -1,4 +1,16 @@
-const loginClick = document.getElementById('');
+const loginClick = document.querySelector('#login');
+const hideL = document.querySelector('.login-page');
+
+loginClick.addEventListener('click', () => {
+  hideL.classList.toggle('click');
+});
+
+const signupClick = document.querySelector('#signin-click');
+const hideS = document.querySelector('.signup-page');
+
+signupClick.addEventListener('click', () => {
+  hideS.classList.toggle('sclick');
+});
 
 const profiles = [
   {
@@ -27,8 +39,8 @@ const profiles = [
   },
 ];
 
+// eslint-disable-next-line no-unused-vars
 const jsonProfiles = JSON.stringify(profiles);
-console.log(jsonProfiles);
 
 const samplePartners = document.getElementById('profiles');
 
