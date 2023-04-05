@@ -8,7 +8,12 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
     <link rel="stylesheet" href="./assets/css/keyframes.css" />
-    <title>Matrimony</title>
+    <link rel="stylesheet" href="./assets/css/videoPlayer.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>PARINAYAM</title>
   </head>
   <body>
     <div class="container-main">
@@ -181,9 +186,68 @@
           <div class="review">
             <h3 class="r-desc">We have more than 300+ Five Star Reviews</h3>
           </div>
-          <div class="play-button">
+          <!-- play button -->
+          <div class="play-button" id="play-button-id">
             <img class="play-img" src="./assets/images/play_arrow.png" />
           </div>
+          <!-- body of video player -->
+          <div class="video-player video-player-hide" id="video-player-id">
+            <div class="video">
+              <video class="video-source" id="video-src" src="./assets/video/Kiara & Sidharth - Ranjha.mp4"></video>
+            </div>
+            <div class="icons">
+              <div class="play-pause-forward-mute-range">
+                <div class="pause-play" id="play-pause">
+                  <!-- play -->
+                  <span class="material-symbols-outlined" id="play-arrow"> play_arrow </span>
+                  <!-- pause -->
+                  <span class="material-symbols-outlined" id="pause"> pause </span>
+                </div>
+
+                <div class="forward">
+                  <span class="material-symbols-outlined"> skip_next </span>
+                </div>
+                <div class="mute-unmute">
+                  <!-- vol-up -->
+                  <span class="material-symbols-outlined" id="vol-up"> volume_up </span>
+                  <!-- vol-off -->
+                  <span class="material-symbols-outlined" id="vol-off"> volume_off </span>
+                </div>
+                <div class="duration">
+                  <span id="video-timing">0:00</span>
+                </div>
+              </div>
+              <div class="autoplay-setting-fullscreen">
+                <!-- autoplay -->
+                <div class="auto-play">
+                  <span class="material-symbols-outlined"> autoplay </span>
+                </div>
+                <!-- setting -->
+                <div class="setting">
+                  <span class="material-symbols-outlined" id="settings-button"> settings </span>
+                  <div class="setting-hide hide-s">
+                    <div class="annotations">
+                      <span class="material-symbols-outlined"> format_quote </span>
+                      <span class="annotations-span">Annotations</span>
+                    </div>
+                    <div class="quality-settings">
+                      <span class="material-symbols-outlined"> discover_tune </span>
+                      <span class="quality-span">Quality </span>
+                    </div>
+                    <div class="sub-titles-setting">
+                      <span class="material-symbols-outlined"> subtitles </span>
+                      <span class="sub-title-span">Sub Titles</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- full-screen -->
+                <div class="full-screen">
+                  <span class="material-symbols-outlined"> fullscreen </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end of video player -->
         </section>
         <section class="p3-container">
           <div class="meet-your-partner">
@@ -396,3 +460,4 @@
   </body>
 </html>
 <script src="./assets/js/script.js"></script>
+<script src="./assets/js/videoPlayer.js"></script>
